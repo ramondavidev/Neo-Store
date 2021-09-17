@@ -1,0 +1,104 @@
+.login-page {
+    display: flex;
+    .photo {
+        width: 50%;
+        height: 100vh;
+
+        background: linear-gradient(141.85deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.1) 100.8%), url('https://images.unsplash.com/photo-1556014758-1bb717383376?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1566&q=80');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 1000px;
+        .text {
+            color: #FFFFFF;
+            width: 80%;
+            margin-left: 5%;
+            margin-top: 70vh;
+        }
+        @media screen and (max-width: 950px) {
+            display: none !important;
+        }
+    }
+    .login {
+        width: 50%;
+        background-color: #FFFFFF;
+        height: 100vh;
+        text-align: center;
+
+        @media screen and (max-width: 950px) {
+            width: 100%;
+        }
+    
+        .title {
+            font-weight: 700;
+            font-size: 24px;
+            margin-top: 15vh;
+            margin-bottom: 50px;
+        }
+    
+        label {
+            display: block;
+            margin-top: 30px;
+            color: rgba(0, 0, 0, .5);
+            font-weight: bold;
+        }
+    
+        .input {
+            text-align: left;
+            width: 80%;
+            margin: auto;
+        }
+    
+        input {
+            width: 100%;
+        }
+    
+        .input-pattern {
+            margin-top: 10px;
+            border-radius: 12px;
+            padding: 15px 20px;
+            border: 1px solid #F8F8F8;
+            background-color: #F8F8F8;
+            width: 90%;
+            //box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.15);
+            &:focus {
+                outline: none;
+                border: 1px solid #394989;
+            }
+        }
+    
+        .btn-login {
+            background-color: #EF476F;
+            border-radius: 12px;
+            padding: 15px 20px;
+            border: none;
+            color: #ffffff;
+            width: 150px;
+            box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.15);
+            cursor: pointer;
+            outline: none;
+        }
+    
+        .links {
+            margin: 30px auto;
+            max-width: 400px;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+    
+        .forgot {
+            font-weight: 600;
+            margin-top: 10px;
+            cursor: pointer;
+            &:hover {
+                color: #EF476F;
+            }
+        }
+    
+        .info {
+            margin-top: 60px;
+            margin-left: 15px;
+            font-weight: 600;
+        }
+    }
+}

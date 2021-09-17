@@ -1,0 +1,183 @@
+.header {
+
+    .logo {
+        font-size: 24px;
+        color: black;
+        text-decoration: none;
+        transition-duration: 0.2s;
+        &:hover {
+            color: #EF476F;
+        }
+    }
+
+    .flex-container-social-network {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        justify-content: flex-end;
+    }
+    .flex-item-social-network {
+        height: 30px;
+        margin: 15px 15px 0 15px;
+        color: black;
+        font-weight: 700;
+        text-decoration: none;
+        transition-duration: 0.2s;
+        &:hover {
+            color: #EF476F;
+        }
+    }
+
+    .flex-container-actions {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        //flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        width: 90vw;
+        margin: 0 auto;
+        @media screen and (max-width: 900px) {
+              display: block;
+          }
+    }
+
+    .flex-container-menu {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: 15px 0 30px 0;
+    }
+    .flex-item-menu {
+        height: 30px;
+        color: black;
+        padding: 5px 10px;
+        font-weight: 700;
+        text-decoration: none;
+        transition-duration: 0.2s;
+        &:hover {
+            color: #EF476F;
+        }
+    }
+
+    .input-pattern {
+        margin: 10px 20px;
+        flex-basis: 650px;
+        //box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.15);
+        input {
+            border-radius: 12px;
+            padding: 15px 20px;
+            border: none;
+            background-color: #F8F8F8;
+            height: 10px;
+            width: 90%;
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+
+    .icons {
+        width: 150px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-right: 50px;
+        @media screen and (max-width: 900px) {
+            margin: auto;
+        }
+    }
+
+    .icon-heart {
+        background-color: #EF476F;
+        padding: 10px;
+        border-radius: 10px;
+        color: #ffffff;
+    }
+
+    .icon-cart {
+        background-color: #FFD166;
+        padding: 10px;
+        border-radius: 10px;
+        color: #ffffff;
+    }
+
+    .icon-profile {
+        background-color: #142850;
+        padding: 10px;
+        border-radius: 10px;
+        color: #ffffff;
+    }
+
+    button {
+        background-color: #ffffff;
+        border: none;
+        cursor: pointer;
+        transition-duration: 0.2s;
+        &:hover {
+            font-size: 1.2em;
+        }
+        &:focus {
+            outline: none;
+        }
+    }
+
+    .fav-options {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        background-color: #EF476F;
+        border-radius: 12px;
+        color: #ffffff;
+    }
+
+    .user-options {
+        position: absolute;
+        background-color: #142850;
+        border-radius: 12px;
+        color: #ffffff;
+        padding: 10px 10px;
+        .user-options-btn {
+            display: flex;
+            justify-content: center;
+            cursor: pointer;
+            &:hover {
+                color: #EF476F;
+            }
+        }
+    }
+    .cart-options {
+        position: absolute;
+        background-color: #FFD166;
+        border-radius: 12px;
+        color: #ffffff;
+        padding: 20px 5px;
+    }
+
+    .grow {
+        font-size: 1.2em;
+    }
+
+    .amount {
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        border: 1px solid #EF476F;
+        background-color: #EF476F;
+        border-radius: 50%;
+        margin-left: 10px;
+        margin-top: -42px;
+        margin-left: 26px;
+        color: #ffffff;
+        font-size: 14px;
+      }
+
+      .circle {
+        height: 50px;
+        width: 50px;
+        background-color: #555;
+        border-radius: 50%;
+      }
+}
